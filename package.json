@@ -1,0 +1,19 @@
+{
+  "name": "oberd-loader",
+  "version": "0.0.1",
+  "description": "",
+  "main": "loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/UniversalResearchSolutions/oberd-loader.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UniversalResearchSolutions/oberd-loader/issues"
+  },
+  "homepage": "https://github.com/UniversalResearchSolutions/oberd-loader"
+}
