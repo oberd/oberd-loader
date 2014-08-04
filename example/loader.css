@@ -1,0 +1,110 @@
+@-webkit-keyframes o-outer {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@keyframes o-outer {
+  0% {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(0, 1, 0, 360deg);
+            transform: rotate3d(0, 1, 0, 360deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 0, 0, 0deg);
+            transform: rotate3d(0, 0, 0, 0deg);
+  }
+}
+@-webkit-keyframes o-inner {
+  0% {
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+            transform: rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 0, 1, 360deg);
+            transform: rotate3d(1, 0, 1, 360deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+            transform: rotate3d(0, 1, 0, 0deg);
+  }
+}
+@keyframes o-inner {
+  0% {
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+            transform: rotate3d(0, 1, 0, 0deg);
+  }
+  50% {
+    -webkit-transform: rotate3d(1, 0, 1, 360deg);
+            transform: rotate3d(1, 0, 1, 360deg);
+  }
+  100% {
+    -webkit-transform: rotate3d(0, 1, 0, 0deg);
+            transform: rotate3d(0, 1, 0, 0deg);
+  }
+}
+.oberd-loader {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 10;
+  -webkit-transition: 500ms all;
+          transition: 500ms all;
+  opacity: 0;
+}
+.oberd-loader .o {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 160px;
+  height: 160px;
+  margin-top: -80px;
+  margin-left: -80px;
+  -webkit-transform: scale(0.3);
+      -ms-transform: scale(0.3);
+          transform: scale(0.3);
+}
+.oberd-loader .o-inner,
+.oberd-loader .o-outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-perspective: 160px;
+          perspective: 160px;
+}
+.oberd-loader .o-outer {
+  -webkit-animation-name: o-outer;
+          animation-name: o-outer;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.oberd-loader .o-inner {
+  -webkit-animation-name: o-inner;
+          animation-name: o-inner;
+}
+.oberd-loader.spinning {
+  opacity: 1;
+  background: white;
+}
