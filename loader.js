@@ -15,7 +15,7 @@ define(function (require) {
       this.$o = $('<div class="o">').append(this.$inner).append(this.$outer);
       this.$el.empty().append(this.$o);
     } else {
-      this.$el.html('Loading...');
+      this.$el.html('<div style="position: absolute; top: 50%; left: 50%; margin-left: -50px; width: 100px; text-align: center;">Loading...</div>');
     }
     var transEndEventNames = {
       'WebkitTransition' : 'webkitTransitionEnd',// Saf 6, Android Browser
