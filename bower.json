@@ -2,7 +2,7 @@
   "name": "oberd-loader",
   "main": "loader.js",
   "less": "loader.less",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "authors": [
     "Nathan Bleigh <nathan.bleigh@gmail.com>"
   ],
